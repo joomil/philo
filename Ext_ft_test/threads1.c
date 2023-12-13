@@ -13,7 +13,7 @@ void    *my_turn(void *arg)
     return (NULL);
 }
 
-void    *your_turn(void *arg)
+void    your_turn()
 {
     int i;
 
@@ -33,6 +33,6 @@ int     main()
 
     //my_turn();
     your_turn();
-    pthread_join(&newthread, NULL);
+    pthread_join(newthread, NULL);
     return (0);
 }
